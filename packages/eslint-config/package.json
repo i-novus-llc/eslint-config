@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "1.0.20",
+    "version": "9.0.0",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
@@ -20,6 +20,7 @@
         "build": "rimraf dist&&tsc"
     },
     "keywords": [
+        "eslint 9",
         "eslint",
         "stylelint",
         "eslint config",
@@ -41,37 +42,36 @@
         "README.md"
     ],
     "exports": {
-        ".": "./dist/react.js",
-        "./node": "./dist/node.js",
-        "./react": "./dist/react.js",
-        "./styles": "./dist/styles.js"
+        ".": {
+            "types": "./dist/index.d.js",
+            "default": "./dist/index.js"
+        },
+        "./styles": {
+            "types": "./dist/styles.d.js",
+            "default": "./dist/styles.js"
+        }
     },
     "dependencies": {
-        "eslint-config-airbnb": "^19.0.4",
-        "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-import-resolver-typescript": "^3.5.5",
-        "eslint-plugin-import": "^2.27.5",
-        "eslint-plugin-jsx-a11y": "^6.7.1",
-        "eslint-plugin-optimize-regex": "^1.2.0",
-        "eslint-plugin-react": "^7.32.2",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "eslint-plugin-sonarjs": "^0.17.0",
-        "eslint-plugin-typescript-sort-keys": "2.3.0",
+        "@eslint/js": "^9.17.0",
+        "eslint-import-resolver-typescript": "^3.7.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-react": "^7.37.3",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.16",
         "stylelint-config-clean-order": "^5.4.2",
         "stylelint-config-recommended-scss": "^14.0.0",
-        "stylelint-config-standard": "^36.0.0"
+        "stylelint-config-standard": "^36.0.0",
+        "typescript-eslint": "^8.18.2"
     },
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "*",
-        "@typescript-eslint/parser": "*",
-        "eslint": "*",
+        "eslint": "9",
         "stylelint": "*"
     },
     "devDependencies": {
-        "@types/eslint": "^8.21.1",
-        "@types/node": "^18.14.0",
+        "@types/node": ">=18.14.0",
+        "eslint": "^9.17.0",
         "rimraf": "5.0.5",
         "tsconfigs": "^5.0.0",
-        "typescript": "^5.1.6"
+        "typescript": "^5.7.2"
     }
 }
