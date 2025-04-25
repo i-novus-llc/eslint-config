@@ -6,11 +6,10 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "yarn workspace @i-novus/eslint-config run build",
-        "postinstall": "license-checker --exclude axe-core"
+        "build": "yarn workspace @i-novus/eslint-config run build"
     },
     "devDependencies": {
-        "@i-novus/license-checker": "^0.0.4"
+        "@i-novus/license-checker": "^1.0.1"
     },
     "engines": {
         "npm": "please-use-yarn",
