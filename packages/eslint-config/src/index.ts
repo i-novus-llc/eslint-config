@@ -116,7 +116,7 @@ const baseRules: InfiniteDepthConfigWithExtends = {
 	},
 }
 const reactRules: InfiniteDepthConfigWithExtends = {
-	files: ['**/*.{tsx}'],
+	files: ['**/*.tsx'],
 	extends: [...(baseRules.extends ?? [])],
 	plugins: {
 		...(baseRules.plugins ?? {}),
@@ -142,7 +142,7 @@ const reactRules: InfiniteDepthConfigWithExtends = {
 	},
 }
 const nodejsRules: InfiniteDepthConfigWithExtends = {
-	files: ['**/*.{ts}'],
+	files: ['**/*.ts'],
 	extends: [...(baseRules.extends ?? [])],
 	plugins: {
 		...(baseRules.plugins ?? {}),
@@ -152,7 +152,7 @@ const nodejsRules: InfiniteDepthConfigWithExtends = {
 	},
 	'settings': {
 		'import/parsers': {
-			'eslint-import-resolver-typescript': ['tsx'],
+			'eslint-import-resolver-typescript': ['ts'],
 		},
 		'import/resolver': {
 			'typescript': true
