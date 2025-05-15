@@ -16,7 +16,7 @@ const config = {
         'selector-class-pattern': [
             '^([a-z][a-z0-9]*((-|--|_|__)[a-z0-9]+)*)$',
             {
-                message: (selector: string) => `Expected class selector "${selector}" to be kebab-case, snake_case or BEM`,
+                message: (selector) => `Expected class selector "${selector}" to be kebab-case, snake_case or BEM`,
             },
         ],
     },
@@ -27,7 +27,7 @@ const config = {
                 'selector-class-pattern': [
                     '^([a-z][a-zA-Z0-9]*)$',
                     {
-                        message: (selector: string) => `Expected class selector "${selector}" to be camelCase`,
+                        message: (selector) => `Expected class selector "${selector}" to be camelCase`,
                     },
                 ],
             }

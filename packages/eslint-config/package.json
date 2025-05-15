@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "9.0.2-rc-4",
+    "version": "9.0.2-rc-5",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
@@ -33,45 +33,42 @@
         "access": "public"
     },
     "files": [
-        "dist",
+        "src",
         "LICENSE",
         "package.json"
     ],
     "scripts": {
-        "lint:ts": "tsc",
-        "build": "yarn run lint:ts&&tsup-node --dts"
+        "build": "yarn run lint:eslint",
+        "lint:eslint": "eslint src"
     },
     "exports": {
         ".": {
-            "types": "./dist/index.d.mjs",
-            "default": "./dist/index.mjs"
+            "default": "./src/index.mjs"
         },
         "./styles": {
-            "types": "./dist/styles.d.mjs",
-            "default": "./dist/styles.mjs"
+            "default": "./src/styles.mjs"
         }
     },
     "dependencies": {
-        "@eslint/js": "^9.17.0",
-        "eslint-import-resolver-typescript": "^3.7.0",
+        "@eslint/js": "^9.26.0",
+        "eslint-import-resolver-typescript": "^4.3.4",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-react": "^7.37.3",
-        "eslint-plugin-react-hooks": "^5.1.0",
-        "eslint-plugin-react-refresh": "^0.4.16",
-        "stylelint-config-clean-order": "^5.4.2",
-        "stylelint-config-recommended-scss": "^14.0.0",
-        "stylelint-config-standard": "^36.0.0",
-        "typescript-eslint": "^8.18.2"
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "globals": "^16.1.0",
+        "stylelint-config-clean-order": "^7.0.0",
+        "stylelint-config-recommended-scss": "^15.0.0",
+        "stylelint-config-standard": "^38.0.0",
+        "typescript-eslint": "^8.32.1"
     },
     "peerDependencies": {
         "eslint": ">= 9",
         "stylelint": "*"
     },
     "devDependencies": {
-        "@types/node": ">=18.14.0",
-        "eslint": "^9.17.0",
-        "rimraf": "5.0.5",
-        "tsup": "^8.4.0",
+        "eslint": "^9.26.0",
+        "rimraf": "^6.0.1",
         "typescript": "^5.7.2"
     }
 }

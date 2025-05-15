@@ -12,7 +12,7 @@
         "copy:doc": "cpy README.md LICENSE ./packages/eslint-config"
     },
     "devDependencies": {
-        "@i-novus/license-checker": "^1.0.1",
+        "@i-novus/license-checker": "^1.0.2",
         "cpy-cli": "^5.0.0"
     },
     "engines": {
