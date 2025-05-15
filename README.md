@@ -14,27 +14,33 @@ or
 yarn add --dev @i-novus/eslint-config
 ```
 
-А так же понадобятся `eslint`, `stylelint`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`.
+А так же понадобятся `eslint`, `stylelint`.
 
 
 ## Использование ESLint
 
-1. Добавьте `.eslintrc.json` в корень проекта.
+1. Добавьте `eslint.config.mjs` в корень проекта:
 
-### Правила react
+```js
+import eslintRules from '@i-novus/eslint-config'
 
-```json
-{
-  "extends": ["@i-novus/eslint-config"]
-  // or "extends": ["@i-novus/eslint-config/react"]
-}
+// eslint-disable-next-line no-restricted-exports,import/no-default-export
+export default eslintRules
 ```
 
-### Правила nodejs
-```json
-{
-  "extends": ["@i-novus/eslint-config/node"]
-}
+Можно расширить конфигурацию, например задав игнорируемую папку:
+
+```js
+import { defineConfig } from 'eslint/config'
+import eslintRules from '@i-novus/eslint-config'
+
+// eslint-disable-next-line no-restricted-exports,import/no-default-export
+export default defineConfig(
+    {
+        ignores: ['src/eslint-ignored-directory'],
+    },
+    eslintRules,
+)
 ```
 
 2. Добавить скрипт в `package.json`
@@ -42,7 +48,7 @@ yarn add --dev @i-novus/eslint-config
 ```json
 {
   "scripts": {
-    "lint": "eslint src/"
+    "lint": "eslint src"
   }
 }
 ```
