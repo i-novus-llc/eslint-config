@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "yarn run copy:doc&&yarn workspace @i-novus/eslint-config run build",
+        "build": "yarn run copy:doc&&yarn workspace @i-novus/eslint-config run build&&echo 3",
         "postinstall": "yarn run check:licenses",
         "check:licenses": "yarn run license-checker",
         "copy:doc": "copyfiles README.md LICENSE packages/eslint-config",
