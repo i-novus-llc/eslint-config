@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "9.0.4",
+    "version": "9.0.4-rc-2",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
