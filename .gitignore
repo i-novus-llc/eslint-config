@@ -15,6 +15,7 @@ dist
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
+!.yarn/cache
 
 # OS
 .DS_Store

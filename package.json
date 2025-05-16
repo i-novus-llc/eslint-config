@@ -6,16 +6,14 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "yarn run copy:doc&&yarn workspace @i-novus/eslint-config run build&&echo 3",
+        "build": "yarn run copy:doc&&yarn workspace @i-novus/eslint-config run build",
         "postinstall": "yarn run check:licenses",
         "check:licenses": "yarn run license-checker",
-        "copy:doc": "copyfiles README.md LICENSE packages/eslint-config",
-        "prepublish": "echo 1",
-        "prepublishOnly": "echo 2"
+        "copy:doc": "cpy README.md LICENSE ./packages/eslint-config"
     },
     "devDependencies": {
         "@i-novus/license-checker": "^1.0.2",
-        "copyfiles": "^2.4.1"
+        "cpy-cli": "^5.0.0"
     },
     "engines": {
         "npm": "please-use-yarn",
