@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "9.0.4-rc-3",
+    "version": "9.0.4-rc-4",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
@@ -42,8 +42,7 @@
         "build": "yarn run lint:eslint&&yarn run copy:src",
         "copy:src": "cpy . ../../dist --cwd=src",
         "lint:eslint": "eslint src",
-        "prepublish": "echo 1",
-        "prepublishOnly": "echo 2"
+        "prepublish": "echo 1"
     },
     "exports": {
         ".": {
