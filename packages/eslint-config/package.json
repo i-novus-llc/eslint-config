@@ -40,9 +40,7 @@
     ],
     "scripts": {
         "build": "yarn run lint:eslint",
-        "lint:eslint": "eslint src",
-        "prepublish": "echo 3",
-        "prepublishOnly": "echo 4"
+        "lint:eslint": "eslint src"
     },
     "exports": {
         ".": {
