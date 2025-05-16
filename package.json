@@ -9,9 +9,7 @@
         "build": "yarn run copy:doc&&yarn workspace @i-novus/eslint-config run build",
         "postinstall": "yarn run check:licenses",
         "check:licenses": "yarn run license-checker",
-        "copy:doc": "copyfiles README.md LICENSE packages/eslint-config",
-        "prepublish": "echo 1",
-        "prepublishOnly": "echo 2"
+        "copy:doc": "copyfiles README.md LICENSE packages/eslint-config"
     },
     "devDependencies": {
         "@i-novus/license-checker": "^1.0.2",
