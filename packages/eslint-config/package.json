@@ -40,7 +40,6 @@
     ],
     "scripts": {
         "build": "yarn run lint:eslint&&yarn run copy:src",
-        "prepublish": "yarn run copy:doc",
         "copy:src": "cpy . ../../dist --cwd=src",
         "copy:doc": "cpy ../../LICENSE ../../README.md ./packages/eslint-config",
         "lint:eslint": "eslint src"
