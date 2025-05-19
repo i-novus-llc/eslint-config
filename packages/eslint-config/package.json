@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "9.0.4-rc-4",
+    "version": "9.0.5",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
@@ -40,9 +40,10 @@
     ],
     "scripts": {
         "build": "yarn run lint:eslint&&yarn run copy:src",
+        "prepublish": "yarn run copy:doc",
         "copy:src": "cpy . ../../dist --cwd=src",
-        "lint:eslint": "eslint src",
-        "prepublish": "echo 1"
+        "copy:doc": "cpy ../../LICENSE ../../README.md ./packages/eslint-config",
+        "lint:eslint": "eslint src"
     },
     "exports": {
         ".": {
