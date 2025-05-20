@@ -38,13 +38,6 @@
         "package.json",
         "README.md"
     ],
-    "scripts": {
-        "build": "yarn run lint:eslint&&yarn run copy:src",
-        "prepublish": "yarn run copy:doc",
-        "copy:src": "cpy . ../../dist --cwd=src",
-        "copy:doc": "cpy ../../LICENSE ../../README.md ./packages/eslint-config",
-        "lint:eslint": "eslint src"
-    },
     "exports": {
         ".": {
             "default": "./dist/index.mjs"
@@ -52,6 +45,13 @@
         "./styles": {
             "default": "./dist/styles.mjs"
         }
+    },
+    "scripts": {
+        "build": "yarn run lint:eslint&&yarn run copy:src",
+        "prepublish": "yarn run copy:doc",
+        "copy:src": "cpy . ../../dist --cwd=src",
+        "copy:doc": "cpy ../../LICENSE ../../README.md ./packages/eslint-config",
+        "lint:eslint": "eslint src"
     },
     "dependencies": {
         "@eslint/js": "^9.26.0",
