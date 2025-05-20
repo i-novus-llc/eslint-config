@@ -1,6 +1,6 @@
 {
     "name": "@i-novus/eslint-config",
-    "version": "9.0.12",
+    "version": "9.1.0",
     "description": "Standard ESLint/style config for I-Novus",
     "author": {
         "name": "I-Novus LLC",
@@ -60,6 +60,7 @@
         "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-react-refresh": "^0.4.20",
+        "eslint-plugin-sonarjs": "^3.0.2",
         "globals": "^16.1.0",
         "stylelint-config-clean-order": "^7.0.0",
         "stylelint-config-recommended-scss": "^15.0.0",

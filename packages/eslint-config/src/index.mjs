@@ -5,6 +5,7 @@ import pluginReact from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import importPlugin from 'eslint-plugin-import'
+import sonarjs from 'eslint-plugin-sonarjs'
 import { defineConfig } from 'eslint/config'
 
 const baseRules = {
@@ -164,6 +165,7 @@ const nodejsRules = tseslint.config({
 
 // eslint-disable-next-line no-restricted-exports,import/no-default-export
 export default defineConfig([
+    sonarjs.configs.recommended,
     { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], plugins: { js }, extends: ['js/recommended'] },
     { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], languageOptions: { globals: { ...globals.browser, ...globals.node } } },
     reactRules,
