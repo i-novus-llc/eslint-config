@@ -183,15 +183,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@i-novus/license-checker@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@i-novus/license-checker@npm:1.0.2"
+"@i-novus/license-checker@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@i-novus/license-checker@npm:1.0.3"
   dependencies:
     commander: "npm:^13.1.0"
     license-checker-rseidelsohn: "npm:^4.4.2"
   bin:
-    license-checker: dist/license-checker.js
-  checksum: 10/44dbaaa083bb80da604145b6348351f32bcb0966d4466438c451a844dd25b97c84ec36449eaeb8530f112c159106dc40d7853e94fe106f8bc3a2ea17b3ab8035
+    license-checker: dist/license-checker.mjs
+  checksum: 10/9156aeed3189096c7a92ed5223e55515e94f739fac0579b4484175a035805dd6362413a6a11c700b196c4844f34a448582a021e0477e20ab5abaf85bef87f7d0
   languageName: node
   linkType: hard
 
@@ -3456,7 +3456,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@i-novus/license-checker": "npm:^1.0.2"
+    "@i-novus/license-checker": "npm:^1.0.3"
   languageName: unknown
   linkType: soft
 

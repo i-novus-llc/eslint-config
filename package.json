@@ -11,7 +11,7 @@
         "check:licenses": "yarn run license-checker"
     },
     "devDependencies": {
-        "@i-novus/license-checker": "^1.0.2"
+        "@i-novus/license-checker": "^1.0.3"
     },
     "engines": {
         "npm": "please-use-yarn",
