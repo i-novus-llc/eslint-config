@@ -173,7 +173,7 @@ __metadata:
     globals: "npm:^16.1.0"
     rimraf: "npm:^6.0.1"
     stylelint-config-clean-order: "npm:^7.0.0"
-    stylelint-config-recommended-scss: "npm:^15.0.0"
+    stylelint-config-recommended-scss: "npm:^15.0.1"
     stylelint-config-standard: "npm:^38.0.0"
     typescript: "npm:^5.7.2"
     typescript-eslint: "npm:^8.32.1"
@@ -3946,9 +3946,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-recommended-scss@npm:^15.0.0":
-  version: 15.0.0
-  resolution: "stylelint-config-recommended-scss@npm:15.0.0"
+"stylelint-config-recommended-scss@npm:^15.0.1":
+  version: 15.0.1
+  resolution: "stylelint-config-recommended-scss@npm:15.0.1"
   dependencies:
     postcss-scss: "npm:^4.0.9"
     stylelint-config-recommended: "npm:^16.0.0"
@@ -3959,7 +3959,7 @@ __metadata:
   peerDependenciesMeta:
     postcss:
       optional: true
-  checksum: 10/7feaf8daa979d90dfd231111bd2e4469727350189111fbd398f71cd30d780a94de5eced8b3a299e2d3692fa31c6e050c5f7c63fe14d3ea193f48f901a81800a9
+  checksum: 10/e00758475fe89bf3ddd1033d783a86e0f5c5c5b7f53238f5673169fe4967f8641043cc2f6baa051fa0912987ccc8eef2ab953933bd5b9845a8f3446f6f854d70
   languageName: node
   linkType: hard
 

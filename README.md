@@ -22,24 +22,24 @@ yarn add --dev @i-novus/eslint-config
 1. Добавьте `eslint.config.mjs` в корень проекта:
 
 ```js
-import eslintRules from '@i-novus/eslint-config'
+import { eslintConfig } from '@i-novus/eslint-config'
 
 // eslint-disable-next-line no-restricted-exports,import/no-default-export
-export default eslintRules
+export default eslintConfig
 ```
 
 Можно расширить конфигурацию, например задав игнорируемую папку:
 
 ```js
 import { defineConfig } from 'eslint/config'
-import eslintRules from '@i-novus/eslint-config'
+import { eslintConfig } from '@i-novus/eslint-config'
 
 // eslint-disable-next-line no-restricted-exports,import/no-default-export
 export default defineConfig(
     {
         ignores: ['src/eslint-ignored-directory'],
     },
-    eslintRules,
+    eslintConfig,
 )
 ```
 
@@ -56,14 +56,12 @@ export default defineConfig(
 
 ## Использование stylelint
 
-1. Добавьте `stylelint.config.cjs` в корень проекта.
+1. Добавьте `stylelint.config.mjs` в корень проекта.
 
 ```js
-module.exports = {
-    extends: [
-        '@i-novus/eslint-config/styles'
-    ]
-}
+import { stylelintConfig } from '@i-novus/eslint-config/styles'
+
+export default stylelintConfig
 ```
 
 2. Добавить скрипт в `package.json`

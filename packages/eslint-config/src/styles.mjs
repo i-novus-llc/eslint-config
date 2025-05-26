@@ -41,4 +41,4 @@ const config = {
     ],
 }
 
-module.exports = config
+export const stylelintConfig = config
