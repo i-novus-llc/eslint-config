@@ -61,6 +61,7 @@ export default defineConfig(
 ```js
 import { stylelintConfig } from '@i-novus/eslint-config/styles'
 
+// eslint-disable-next-line no-restricted-exports,import/no-default-export
 export default stylelintConfig
 ```
 
