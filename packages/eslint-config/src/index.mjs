@@ -115,6 +115,10 @@ const baseRules = {
         // Везде одиночные кавычкии
         'quotes': ['error', 'single'],
         'yoda': ['off'],
+        //Sonar
+        'sonarjs/todo-tag': 'off',
+        'sonarjs/pseudo-random': 'off',
+        'sonarjs/table-header': 'off',
     },
 }
 const reactRules = tseslint.config({
