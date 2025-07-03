@@ -57,12 +57,7 @@ const baseRules = {
         'import/no-default-export': 'error',
         // Дефолтного экспорта быть не должно
         'import/prefer-default-export': 'off',
-        'import/extensions': ['error', 'never', {
-            'json': 'always',
-            'png': 'always',
-            'jpg': 'always',
-            'svg': 'always',
-        }],
+        'import/extensions': ['error', 'never'],
         'linebreak-style': ['off'],
         'max-len': ['error', {
             'code': 120,
