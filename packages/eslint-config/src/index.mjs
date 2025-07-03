@@ -57,6 +57,12 @@ const baseRules = {
         'import/no-default-export': 'error',
         // Дефолтного экспорта быть не должно
         'import/prefer-default-export': 'off',
+        'import/extensions': ['error', 'never', {
+            'json': 'always',
+            'png': 'always',
+            'jpg': 'always',
+            'svg': 'always',
+        }],
         'linebreak-style': ['off'],
         'max-len': ['error', {
             'code': 120,
@@ -119,6 +125,7 @@ const baseRules = {
         'sonarjs/todo-tag': 'off',
         'sonarjs/pseudo-random': 'off',
         'sonarjs/table-header': 'off',
+        'sonarjs/no-commented-code': 'off'
     },
 }
 const reactRules = tseslint.config({
